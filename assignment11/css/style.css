@@ -6,15 +6,18 @@ div{
 }
 
 .title{
-    font-family: PixelifySans;
+    font-family: DancingSript;
     font-size: 80px;
-    text-shadow: -6px 2px 0 #000;
-    color:aliceblue;
+    text-shadow: gray;
+    color:rgb(10, 95, 169);
     background-color:#a9a9a9;
     height: 100px;
     text-align: center;
 }
 
+#ring {
+    font-weight: 800;
+}
 
     #ring:hover {
         background: url("../images/ring.jpg");
