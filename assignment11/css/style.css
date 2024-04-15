@@ -1,10 +1,18 @@
 div{
     text-align: left;
-    font-family: RobotoMono;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     margin: 10px;
 }
-
+.title{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 80px;
+    text-shadow: -6px 2px 0 #000;
+    color: blue;
+    background-color: grey;
+    height: 100 px;
+    text-align: center;
+}
 
 #ring {
     font-weight: 800;
