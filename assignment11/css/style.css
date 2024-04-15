@@ -8,18 +8,21 @@ div{
 .title{
     .bebas-neue-regular {
         font-family: "Bebas Neue", sans-serif;
-        font-size: 80px;
+        font-size: 90px;
         font-style: italic;
         color: black;
         background-color: lightskyblue;
         text-align: center;
       }
-}
+  
 
-#ring:hover {
-    background: url("../images/ring.jpg");
-    float:right;
-    display: block;
-    width: 500px;
-    height: 400px;
-}
+    }
+
+    #ring:hover {
+        background: url("../images/ring.jpg");
+        float: right;
+        display: block;
+        width: 500px;
+        height: 400px;
+    }
+
