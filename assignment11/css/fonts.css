@@ -1,2 +1,16 @@
+@font-face {
+    font-family:'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-style: 'bold';
+}
+
+
+
+@font-face {
+    font-family:'DancingScript';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-style: 'bold';
+
+}
 
   
