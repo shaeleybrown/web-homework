@@ -1,16 +1,17 @@
-div{
+div {
     text-align: left;
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
     margin: 10px;
 }
-.title{
+
+.title {
     font-family: "Ubuntu", sans-serif;
     font-size: 80px;
     text-shadow: -6px 2px 0 #000;
     color: blue;
     background-color: grey;
-    height: 100 px;
+    height: 100px; /* Removed space between value and unit */
     text-align: center;
 }
 
@@ -18,17 +19,17 @@ div{
     font-weight: 800;
 }
 
-    #ring:hover {
-        background: url("../images/ring.jpg");
-        float: right;
-        display: block;
-        width: 500px;
-        height: 400px;
-    }
+#ring:hover {
+    background: url("../images/ring.jpg");
+    float: right;
+    display: block;
+    width: 500px;
+    height: 400px;
+}
 
 #montana:hover:after {
-    content:"321 Main St Polson, MT 59860";
+    content: "321 Main St Polson, MT 59860";
     font-weight: 400;
-    color:blue;
-    font-style: bold;
+    color: blue;
+    font-style:normal;
 }
