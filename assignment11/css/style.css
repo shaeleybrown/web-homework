@@ -6,13 +6,15 @@ div{
 }
 
 .title{
-    .bebas-neue-regular {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 90px;
-        color: black;
-        background-color: lightskyblue;
-        text-align: center;
-      }
+    font-family: DancingScript;
+    font-size: 80px;
+    text-shadow: -6px 2px 0 #000;
+    color:rgb(25, 102, 170);
+    background-color:#a9a9a9;
+    height: 100px;
+    text-align: center;
+}
+
   
 
     }
