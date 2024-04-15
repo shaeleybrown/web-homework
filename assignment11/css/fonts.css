@@ -1,31 +1,13 @@
-@font-face{
-    font-family:'PixelifySans';
-    src: url('../fonts/PixelifySans-SemiBold.ttf') format('truetype');
-    font-style: 'bold';
-}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-
-
-@font-face{
-    font-family: 'RobotoMono';
-    src: url('../fonts/RobotoMono-Bold.ttf') format('truetype');
-    font-style: 'bold';
-}
-
-@font-face{
-    font-family: 'RobotoMono';
-    src: url('../fonts/RobotoMono-Italic.ttf') format('truetype');
-    font-style: 'italic';
-}
-
-@font-face{
-    font-family:'RobotoMono';
-    src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
-    font-style: 'normal';
-}
-
-
-
-
-
+  .dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
   
