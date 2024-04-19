@@ -53,3 +53,26 @@ header{
 .mainlogo {
     float:left;
 }
+
+.ringstyle {
+    float:left;
+    width:300px;
+    height: 300px;
+}
+
+.Braceletsimage {
+    float:left;
+    width:300px;
+    height: 300px;
+}
+
+.earrings {
+    float:left;
+    width:300px;
+    height: 300px;
+}
+.earringsimage {
+    float:left;
+    width:300px;
+    height: 300px;
+}
