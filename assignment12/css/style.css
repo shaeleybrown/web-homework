@@ -23,7 +23,7 @@ header {
     margin: 0;
     text-align: center;
     background: black;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .menu-item a, .dropdown a {
@@ -42,11 +42,5 @@ header {
     border: 2px solid black;
     margin: 0;
     color: black;
-    background-color: aquamarine;
-}
-
-/* Add more specific classes or IDs for these elements */
-.mainlogo, .ringstyle, .Braceletsimage, .earrings, .earringsimage {
-    /* Your styles for these elements */
-    /* Consider using more specific selectors */
+    background-color: black;
 }
