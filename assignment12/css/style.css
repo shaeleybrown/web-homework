@@ -1,78 +1,52 @@
-body{
-    font-family:cursive;
-    font-style:normal;
-}
-
-header{
-    position: fixed;
-    background-color:darkgrey;
+body {
     font-family: cursive;
     font-style: normal;
-    color:cyan;
-    text-align:left;
-    margin:0;
-    height:3em;
-    width:100%;
+    margin: 0;
 }
 
-.menu-item{
-    display:inline-block;
-    margin:0%;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: darkgrey;
+    font-family: inherit; /* Inherit from body */
+    font-style: inherit; /* Inherit from body */
+    color: cyan;
+    text-align: left;
+    margin: 0;
+    height: 3em;
+    width: 100%;
+}
+
+.menu-item, .dropdown {
+    display: inline-block;
+    margin: 0;
     text-align: center;
     background: black;
     padding: 1em 0;
 }
 
-.menu-item a{
-    color:aqua;
-}
-.menu-item:hover {
-    background-color:cornflowerblue;
-}
-
-.dropdown {
-    display:inline-block;
-    margin:0%;
-    text-align: center;
-    background: black;
-    padding: 1em 0;
-
-}
-.dropdown a{
+.menu-item a, .dropdown a {
     color: aqua;
 }
+
+.menu-item:hover {
+    background-color: cornflowerblue;
+}
+
 .dropdown-content {
-    display:inline-block;
-    position:fixed;
+    display: none; /* Initially hide */
+    position: absolute; /* Relative to parent */
+    top: 100%; /* Position below parent */
+    left: 0;
     border: 2px solid black;
-    margin:0;
-    color:black;
+    margin: 0;
+    color: black;
     background-color: aquamarine;
 }
 
-.mainlogo {
-    float:left;
-}
-
-.ringstyle {
-    float:left;
-    width:300px;
-    height: 300px;
-}
-
-.Braceletsimage {
-    float:left;
-    width:300px;
-    height: 300px;
-}
-
-.earrings {
-    float:left;
-    width:300px;
-    height: 300px;
-}
-.earringsimage {
-    float:left;
-    width:300px;
-    height: 300px;
+/* Add more specific classes or IDs for these elements */
+.mainlogo, .ringstyle, .Braceletsimage, .earrings, .earringsimage {
+    /* Your styles for these elements */
+    /* Consider using more specific selectors */
 }
