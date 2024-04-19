@@ -1,0 +1,55 @@
+body{
+    font-family:cursive;
+    font-style:normal;
+}
+
+header{
+    position: fixed;
+    background-color:darkgrey;
+    font-family: cursive;
+    font-style: normal;
+    color:cyan;
+    text-align:left;
+    margin:0;
+    height:3em;
+    width:100%;
+}
+
+.menu-item{
+    display:inline-block;
+    margin:0%;
+    text-align: center;
+    background: black;
+    padding: 1em 0;
+}
+
+.menu-item a{
+    color:aqua;
+}
+.menu-item:hover {
+    background-color:cornflowerblue;
+}
+
+.dropdown {
+    display:inline-block;
+    margin:0%;
+    text-align: center;
+    background: black;
+    padding: 1em 0;
+
+}
+.dropdown a{
+    color: aqua;
+}
+.dropdown-content {
+    display:inline-block;
+    position:fixed;
+    border: 2px solid black;
+    margin:0;
+    color:black;
+    background-color: aquamarine;
+}
+
+.mainlogo {
+    float:left;
+}
