@@ -33,6 +33,10 @@ header {
 .menu-item:hover {
     background-color: cornflowerblue;
 }
+.dropdown a {
+    color: aqua;
+    text-decoration: solid;
+}
 
 .dropdown-content {
     display: none; /* Initially hide */
@@ -54,9 +58,27 @@ header {
     text-align: center;
     margin: 0;
     padding: 0.5em;
+    min-width: 5em;
 }
 
 .dropdown-item:hover, .dropdown-item:Hover a {
     color:black;
     background-color: blueviolet;
+}
+
+.mainlogo {
+    float: left;
+}
+
+.jewelryimage {
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+.jewelry {
+    float:left;
+    height: 200px;
+    width: 400px;
+
 }
