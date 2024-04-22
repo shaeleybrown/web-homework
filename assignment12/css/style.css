@@ -6,7 +6,7 @@ body {
 
 header{
     position: fixed;
-    background-color: rgb(122, 121, 121);
+    background-color: rgb(206, 32, 116);
     font-style: medium;
     color: white;
     text-align: left;
@@ -39,7 +39,7 @@ header{
             display: none;
             position: absolute;
             background: white;
-            color: black;
+            color: rgb(99, 23, 176);
             min-width: 150px;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -55,11 +55,11 @@ header{
         }
 
         .dropdown-item a {
-            color: black;
+            color: rgb(220, 14, 14);
         }
 
         .dropdown-item a:hover {
-            background: lightgray;
+            background: rgb(2, 0, 0);
         }
  
 
