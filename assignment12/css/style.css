@@ -4,15 +4,15 @@ body {
     margin: 0;
 }
 
-header {
+header{
     position: fixed;
-    background-color: darkgrey;
-    color: rgb(0, 5, 5);
-    font-weight: 500; /* Adjusted for clarity */
+    background-color: rgb(122, 121, 121);
+    font-style: medium;
+    color: white;
     text-align: left;
+    margin: 0;
     height: 2.5em;
     width: 100%;
-    padding: 0.5em;
 }
 
         /* Base styles for the navigation menu */
