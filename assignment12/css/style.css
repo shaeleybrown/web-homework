@@ -14,57 +14,65 @@ header {
     padding: 0.5em; /* Added padding */
 }
 
-.menu-item, .dropdown {
+.menu-item{
     display: inline-block;
+    margin: 0 0;
     min-width: 8em;
     text-align: center;
-    background: black;
-    padding: 0.5em 1em; /
+    background-color: #26272b;
+    padding: 0.5em 0;
 }
 
-.menu-item a, .dropdown a {
-    color: aqua;
-    text-decoration: none; 
+/* Style the links: */
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
 }
-
 .menu-item:hover {
-    background-color: cornflowerblue;
+    background-color: #1CCDCA;
 }
 
+/* Add a dropdown feature: */
 .dropdown {
-    position: relative; /* Relative to parent */
+    display: inline-block;
+    margin: 0 0;
+    min-width: 8em;
+    text-align: center;
+    background-color: black;
+    padding: 0.5em 0;
 }
-
+.dropdown a {
+    color: white;
+    text-decoration: none;
+}
 .dropdown-content {
-    display: none; /* Initially hide */
-    position: absolute; /* Relative to dropdown */
-    top: 100%; /* Position below parent */
-    left: 0;
-    border: 1px solid black;
-    background-color: black; /* Matching dropdown background */
-    padding: 0; /* No padding */
-    z-index: 10; /* Ensure dropdown is on top */
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    margin: 0;
+    margin-top: 0.5em;
+    color: #000;
+    background-color: #fff;
+    z-index: 1;
 }
-
 .dropdown-content a {
-    color: aqua;
-    text-decoration: none; /* No underline */
+    color: #000;
 }
-
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block;
 }
 
+/* Style dropdown item display: */
 .dropdown-item {
     display: block;
-    text-align: center;
-    padding: 0.5em; /* Consistent padding */
-    background-color: black; /* Matching dropdown */
+    text-align: left;
+    margin: 0;
+    padding: 0.5em;
+    min-width: 7em;
 }
-
-.dropdown-item:hover {
-    color: black; /* Matching hover style */
-    background-color: blueviolet; /* Hover background color */
+.dropdown-item:hover, .dropdown-item:hover a {
+    color: #baf0ef;
+    background-color: #a2a2a2;
 }
 
 .mainlogo {
