@@ -15,6 +15,54 @@ header {
     padding: 0.5em;
 }
 
+        /* Base styles for the navigation menu */
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .menu-item {
+            position: relative; 
+            padding: 10px;
+        }
+
+        .menu-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Dropdown content is hidden by default */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            color: black;
+            min-width: 150px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Show dropdown on hover */
+        .menu-item:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px;
+        }
+
+        .dropdown-item a {
+            color: black;
+        }
+
+        .dropdown-item a:hover {
+            background: lightgray;
+        }
+ 
+
 .menu-item {
     display: inline-block;
     margin: 0;
@@ -32,58 +80,6 @@ header {
 
 .menu-item:hover {
     background-color: #1CCDCA;
-}
-
-/* Add a dropdown feature: */
-.dropdown {
-    display: inline-block;
-    position: relative; /* Ensure relative positioning */
-    margin: 0;
-    min-width: 8em;
-    text-align: center;
-    background-color: black;
-    padding: 0.5em;
-}
-
-.dropdown a {
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    border: 1px solid #000;
-    top: 100%; /* Adjusted position */
-    left: 0;
-    z-index: 100; /* Ensure high z-index */
-    margin-top: 0.5em;
-    background-color: white; /* Corrected background color */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block; /* Ensures dropdown displays on hover */
-}
-
-/* Style dropdown item display: */
-.dropdown-item {
-    display: block;
-    text-align: left;
-    margin: 0;
-    padding: 0.5em;
-    min-width: 7em;
-}
-
-.dropdown-item:hover {
-    background-color: #a2a2a2;
-}
-
-.dropdown-item a {
-    color: #000;
-}
-
-.dropdown-item:hover a {
-    color: #baf0ef;
 }
 
 .mainlogo {
