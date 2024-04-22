@@ -8,8 +8,53 @@
     <meta name="author" content="Shaeley Brown">
     <link rel="stylesheet" href="./css/fonts.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-</head>
+    <style>
+        nav {
+            background: #333;
+            color: white;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .menu-item {
+            position: relative; 
+            padding: 5px;
+        }
 
+        .menu-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            color: black;
+            min-width: 140px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Show dropdown on hover */
+        .menu-item:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px;
+        }
+
+        .dropdown-item a {
+            color: black;
+        }
+
+        .dropdown-item a:hover {
+            background: lightgray;
+        }
+    </style>
+</head>
 <body>
     <header>
         <nav>
