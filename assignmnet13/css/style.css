@@ -1,25 +1,13 @@
 
-/* Reset box-sizing for all elements */
 * {
     box-sizing: border-box;
 }
 
-/* Define body styling */
+
 body {
     background-color: #fff;
     font-family: Arial, sans-serif;
-}
-
-/* Corrected textareacomments padding */
-.textareacomments {
-    padding-bottom: 10px; 
-}
-
-/* Define basic div styling */
-div {
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 5px;
+    padding-top: 4em; 
 }
 
 /* Style the header */
@@ -38,7 +26,7 @@ header {
 /* Define menu layout */
 .menu-item {
     display: inline-block;
-    margin: 1em 0.2em;
+    margin: 0.5em 0.2em;
     min-width: 6em;
     text-align: center;
     background-color: #20f1cb;
@@ -50,12 +38,12 @@ header {
     text-decoration: none;
 }
 
-/* Change background color on hover */
+
 .menu-item:hover {
     background-color: rgb(0, 0, 0);
 }
 
-/* Dropdown setup */
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -65,22 +53,22 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    border: 1px solid #06fbf7; /* Adjusted border color */
+    border: 1px solid #06fbf7;
     background-color: white;
     margin-top: 0.5em;
-    min-width: 8em; 
+    min-width: 8em;
     z-index: 1000;
 }
 
-/* Display dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Style dropdown items */
+
 .dropdown-content a {
     color: black;
     padding: 0.5em;
+    text-decoration: none;
 }
 
 .dropdown-item {
@@ -88,73 +76,74 @@ header {
 }
 
 .dropdown-item:hover {
-    background-color: #f0f0f0; /* Light gray on hover */
+    background-color: #f0f0f0; 
     color: blue; 
 }
 
-/* Corrected class name error */
-.opening-paragraph {
-    color: black;
-    font-size: 18px;
-    text-indent: 10px;
-    font-weight: 600;
+
+div {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
-.second-paragraph {
-    font-size: 18px;
-}
 
-/* Default paragraph styling */
 p {
     line-height: 1.45em;
     font-size: 16px;
     text-align: left;
 }
 
-/* Centered heading styles */
+
 h1, h3, h5 {
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
-/* Corrected main image float */
-.mainimage {
-    float: left;
-    width: 100px; 
-    height: 100px;
-}
-
-/* Media queries for various images */
-@media only screen and (min-width: 500px) {
-    .mainimage {
-        content: url("../images/logo.png");
-    }
-}
 
 .secondimage {
     float: right;
 }
 
 .thirdimage {
+    width: 50%; 
     margin: auto;
 }
 
-.fourthimage {
+.fourthimage, .fifthimage {
+    width: 50%;
     margin: auto;
 }
 
-.fifthimage {
-    margin: auto;
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 33%; 
 }
 
-/* Media query content corrections */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Contact us section */
+.contactus {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
 @media only screen and (min-width: 500px) {
     .secondimage {
-        content: url("../images/logo.png");
+        float: right;
     }
     
     .thirdimage {
-        content: url("../images/ring1.jpg");
+        float: none; 
     }
     
     .fourthimage {
@@ -166,23 +155,4 @@ h1, h3, h5 {
     }
 }
 
-/* Define column layout */
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-/* Clear floats for row */
-.row::after {
-    content: "";
-    clear: both;
-    display: table; /* Clear float */
-}
-
-/* Corrected contact us section */
-.contactus {
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-}
 
