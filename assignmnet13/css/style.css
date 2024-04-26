@@ -1,20 +1,28 @@
-/* Reset box-sizing for all elements */
+
 * {
     box-sizing: border-box;
 }
-
-/* Set default body style */
-body {
-    background-color: white;
-    font-family: Arial, sans-serif;
+.textareacomments{
+    padding-bottom: 300px;
 }
 
+
+body {
+    background-color: rgb(116, 116, 115);
+    font-family: Arial, sans-serif;
+}
+div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    padding: 5px;
+}
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #26272b;
+    background-color: #030e3a;
     text-transform: uppercase;
     height: 4em;
     width: 100%;
@@ -48,11 +56,11 @@ header {
     position: relative;
 }
 
-/* Style the dropdown content */
+
 .dropdown-content {
     display: none;
     position: absolute;
-    border: 1px solid black;
+    border: 1px solid rgb(6, 251, 247);
     background-color: white;
     margin-top: 0.5em;
     min-width: 8em; /* Ensure dropdown is wide enough */
@@ -77,27 +85,53 @@ header {
     color: blue; /* Change text color on hover */
 }
 
-/* Style paragraphs */
+.opening-parahraph{
+    color:black;
+    font-size: 18px;
+    text-indent: 10px;
+    font-weight: 600;
+
+}
+.second-paragraph{
+    font-size:18px;
+}
+
 p {
     line-height: 1.45em;
     font-size: 16px;
     text-align: left;
 }
 
-/* Style heading tags */
+
 h1, h3, h5 {
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
-/* Style image elements */
+
 .mainimage {
-    float: left;
-    width: 100px; /* Set default width */
-    height: 100px; /* Set default height */
+    float: right;
+    width: 100px; 
+    height: 100px;
+    content: url("../images/logo.png");
+}
+@media only screen and (min-width: 500px) {
+    .mainimage{
+        content: url("../images/logo.png");
+    }
+}
+.secondimage{
+    float:right;
+    content: url("../images/logo.png");
+}
+@media only screen and (min-width:500px) {
+    .secondimage{
+        float:right;
+        content:url("../images/logo.png")
+    }
 }
 
-/* Style for layout columns */
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -109,14 +143,13 @@ h1, h3, h5 {
     display: table; /* Clear float for rows */
 }
 
-/* Define the contact form styling */
+
 .contactus {
     width: 50%;
     margin: 0 auto; /* Center the contact form */
     text-align: left;
 }
 
-/* Fix padding for the textarea */
 .textareacomments {
-    padding-bottom: 10px; /* Avoid excessive padding */
+    padding-bottom: 10px; 
 }
