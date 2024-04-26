@@ -27,7 +27,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #030e3a;
+    background-color: #042dd1;
     text-transform: uppercase;
     height: 4em;
     width: 100%;
@@ -41,7 +41,7 @@ header {
     margin: 1em 0.2em;
     min-width: 6em;
     text-align: center;
-    background-color: #26272b;
+    background-color: #20f1cb;
 }
 
 /* Style the menu links */
