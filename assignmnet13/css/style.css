@@ -1,197 +1,122 @@
+/* Reset box-sizing for all elements */
 * {
     box-sizing: border-box;
 }
 
-.textareacomments{
-    padding-bottom: 300px;
-}
-body{
+/* Set default body style */
+body {
     background-color: white;
-}
-div{
-    text-align: left;
-    line-height: 1.45em;
-    font-family: cursive;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-h1, h3, h5{
-    text-align: center;
-    font-family: cursive;
-    
-}
-.opening-paragraph{
-    color: black;
-    font-size: 16px;
-    text-indent: 10px;
-    font-weight:700;
+    font-family: Arial, sans-serif;
 }
 
-.second-paragraph{
-    font-size: 16px;
-}
-
-table{
-    border: 1px dashed black;
-    font-family: cursive;
-    font-weight: 700;
-    padding: 10px;
-}
-
-
-p{
-    font-family:  Merriweather, sans-serif;
-}
-
-/* Set your header design: */
+/* Define header styles */
 header {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: #26272b;
-    font-family: cursive;
     text-transform: uppercase;
-    margin-top: 0;
     height: 4em;
     width: 100%;
-    text-align: left;
+    padding: 0.5em 1em;
+    z-index: 1000; /* Keep the header above other content */
 }
 
-/* Set the layout of the menu: */
+/* Define menu layout */
 .menu-item {
     display: inline-block;
-    margin: 1em .2em;
+    margin: 1em 0.2em;
     min-width: 6em;
     text-align: center;
     background-color: #26272b;
-    padding: 0.5em 1em;
 }
 
-/* Style the links: */
+/* Style the menu links */
 .menu-item a {
     color: white;
     text-decoration: none;
 }
 
+/* Change background color on hover */
 .menu-item:hover {
     background-color: rgb(0, 0, 0);
-   
 }
 
-/* Add a dropdown feature: */
+/* Add dropdown functionality */
 .dropdown {
     display: inline-block;
+    position: relative;
 }
 
+/* Style the dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
-    border: 1px solid #000;
-    margin: 0.5em 0 0 -1em;
-    color: #000;
-    background-color: #fff;
-    z-index: 1;
-}
-.dropdown-content a {
-    color: #d183ec;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 0.5em;
+    min-width: 8em; /* Ensure dropdown is wide enough */
+    z-index: 1000; /* Ensure it appears above other elements */
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* Show the dropdown on hover */
 }
 
+.dropdown-content a {
+    color: black;
+    padding: 0.5em;
+}
 
 .dropdown-item {
-    display: block;
     text-align: left;
-    margin: 0;
-    padding: 0.5em 1em 0.5em 1em;
-    min-width: 5.9em;
 }
 
-.dropdown-item:hover, .dropdown-item:hover a {
-    color: rgb(88, 65, 206);
-    background-color: #faf8f8;
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+    color: blue; /* Change text color on hover */
 }
 
-.mainimage{
+/* Style paragraphs */
+p {
+    line-height: 1.45em;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Style heading tags */
+h1, h3, h5 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style image elements */
+.mainimage {
     float: left;
-    content:url("../images/logo.png");
-
+    width: 100px; /* Set default width */
+    height: 100px; /* Set default height */
 }
 
-/* For width 600px and larger: */
-@media only screen and (min-width: 600px) {
-    .mainimage{
-        content:url("../images/logo.png");
-    }
-}
-
-.secondimage{
-    float:right;
-    content:url("../images/logo.png");
-}
-
-/* For width 600px and larger: */
-@media only screen and (min-width: 600px) {
-    .secondimage{
-        float:right;
-        content:url("../images/logo.jpg");
-    }
-}
-
-.thirdimage{
-    margin: auto;
-    content:url("../images/logo.png");
-}
-
-/* For width 600px and larger: */
-@media only screen and (min-width: 600px) {
-    .thirdimage{
-        margin: auto;
-        content:url("../images/logo.png");
-    }
-}
-
-.fourthimage{
-    margin:auto;
-    content:url("../images/logo.png");
-}
-
-/* For width 600px and larger: */
-@media only screen and (min-width: 600px) {
-    .fourthimage{
-        margin: auto;
-        content:url("../images/logo.png");
-    }
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
+/* Style for layout columns */
 [class*="col-"] {
     float: left;
     padding: 15px;
-  }
+}
 
 .row::after {
     content: "";
     clear: both;
-    display: table;
-  }
+    display: table; /* Clear float for rows */
+}
 
-.contactus{
-    width:50%;
-    margin-left: 25%;
-    
+/* Define the contact form styling */
+.contactus {
+    width: 50%;
+    margin: 0 auto; /* Center the contact form */
+    text-align: left;
+}
+
+/* Fix padding for the textarea */
+.textareacomments {
+    padding-bottom: 10px; /* Avoid excessive padding */
 }
