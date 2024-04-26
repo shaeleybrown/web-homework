@@ -131,6 +131,42 @@ h1, h3, h5 {
     }
 }
 
+.thirdimage{
+    margin:auto;
+    content:url("../images/ring1.jpg")
+}
+
+@media only screen and (min-width: 500px){
+    .thirdimage{
+        margin:auto;
+        content:url("../images/ring1.jpg");
+    }
+}
+
+.fourthimage{
+    margin:auto;
+    content:url("../images/logo.png");
+
+}
+
+@media only screena nd (min-width:500px) {
+    .fourthimage{
+        margin:auto;
+        content:url("../images/lolo.png")
+    }
+}
+
+.fifthimage{
+    margin:auto;
+    content:url("../images/bracelet1.jpeg");
+}
+
+@media only screen and (min-width: 500px){
+    .fifthimage{
+        margin:auto;
+        content: url("../images/bracelet1.jpeg");
+    }
+}
 
 [class*="col-"] {
     float: left;
