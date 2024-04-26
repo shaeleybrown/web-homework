@@ -1,23 +1,28 @@
 
+/* Reset box-sizing for all elements */
 * {
     box-sizing: border-box;
 }
-.textareacomments{
-    padding-bottom: 300px;
-}
 
-
+/* Define body styling */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     font-family: Arial, sans-serif;
 }
-div{
+
+/* Corrected textareacomments padding */
+.textareacomments {
+    padding-bottom: 10px; 
+}
+
+/* Define basic div styling */
+div {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     padding: 5px;
 }
 
+/* Style the header */
 header {
     position: fixed;
     top: 0;
@@ -50,27 +55,29 @@ header {
     background-color: rgb(0, 0, 0);
 }
 
-/* Add dropdown functionality */
+/* Dropdown setup */
 .dropdown {
     display: inline-block;
     position: relative;
 }
 
-
+/* Dropdown content styling */
 .dropdown-content {
     display: none;
     position: absolute;
-    border: 1px solid rgb(6, 251, 247);
+    border: 1px solid #06fbf7; /* Adjusted border color */
     background-color: white;
     margin-top: 0.5em;
-    min-width: 8em; /* Ensure dropdown is wide enough */
-    z-index: 1000; /* Ensure it appears above other elements */
+    min-width: 8em; 
+    z-index: 1000;
 }
 
+/* Display dropdown content on hover */
 .dropdown:hover .dropdown-content {
-    display: block; /* Show the dropdown on hover */
+    display: block;
 }
 
+/* Style dropdown items */
 .dropdown-content a {
     color: black;
     padding: 0.5em;
@@ -82,110 +89,100 @@ header {
 
 .dropdown-item:hover {
     background-color: #f0f0f0; /* Light gray on hover */
-    color: blue; /* Change text color on hover */
+    color: blue; 
 }
 
-.opening-parahraph{
-    color:black;
+/* Corrected class name error */
+.opening-paragraph {
+    color: black;
     font-size: 18px;
     text-indent: 10px;
     font-weight: 600;
-
-}
-.second-paragraph{
-    font-size:18px;
 }
 
+.second-paragraph {
+    font-size: 18px;
+}
+
+/* Default paragraph styling */
 p {
     line-height: 1.45em;
     font-size: 16px;
     text-align: left;
 }
 
-
+/* Centered heading styles */
 h1, h3, h5 {
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
-
+/* Corrected main image float */
 .mainimage {
-    float: center;
+    float: left;
     width: 100px; 
     height: 100px;
-    content: url("../images/logo.png");
 }
+
+/* Media queries for various images */
 @media only screen and (min-width: 500px) {
-    .mainimage{
+    .mainimage {
         content: url("../images/logo.png");
     }
 }
-.secondimage{
-    float:right;
-    content: url("../images/logo.png");
+
+.secondimage {
+    float: right;
 }
-@media only screen and (min-width:500px) {
-    .secondimage{
-        float:right;
-        content:url("../images/logo.png")
+
+.thirdimage {
+    margin: auto;
+}
+
+.fourthimage {
+    margin: auto;
+}
+
+.fifthimage {
+    margin: auto;
+}
+
+/* Media query content corrections */
+@media only screen and (min-width: 500px) {
+    .secondimage {
+        content: url("../images/logo.png");
     }
-}
-
-.thirdimage{
-    margin:auto;
-    content:url("../images/ring1.jpg")
-}
-
-@media only screen and (min-width: 500px){
-    .thirdimage{
-        margin:auto;
-        content:url("../images/ring1.jpg");
+    
+    .thirdimage {
+        content: url("../images/ring1.jpg");
     }
-}
-
-.fourthimage{
-    margin:auto;
-    content:url("../images/logo.png");
-
-}
-
-@media only screena nd (min-width:500px) {
-    .fourthimage{
-        margin:auto;
-        content:url("../images/lolo.png")
+    
+    .fourthimage {
+        content: url("../images/logo.png");
     }
-}
-
-.fifthimage{
-    margin:auto;
-    content:url("../images/bracelet1.jpeg");
-}
-
-@media only screen and (min-width: 500px){
-    .fifthimage{
-        margin:auto;
+    
+    .fifthimage {
         content: url("../images/bracelet1.jpeg");
     }
 }
 
+/* Define column layout */
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
 
+/* Clear floats for row */
 .row::after {
     content: "";
     clear: both;
-    display: table; /* Clear float for rows */
+    display: table; /* Clear float */
 }
 
-
+/* Corrected contact us section */
 .contactus {
     width: 50%;
-    margin: 0 auto; /* Center the contact form */
+    margin: 0 auto;
     text-align: left;
 }
 
-.textareacomments {
-    padding-bottom: 10px; 
-}
