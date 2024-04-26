@@ -1,80 +1,69 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
+    <title>Contact Us - Brown's Jewelry</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Fonts!">
+    <meta name="description" content="Contact Brown's Jewelry to get in touch with our team.">
     <meta name="author" content="Shaeley Brown">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
-    <header class="">
-        <div class="menu-item">
-            <a href="../index.html">Home</a>
-        </div>
-        <div class="menu-item">
-            <a href="about.html">About</a>
-        </div>
-        <div class="menu-item">
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="menu-item dropdown">
-            <a href="services.html">Services</a>
-            <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <a href="#" target="_new">Jewelry</a>
-                </div>
-                <div class="dropdown-item">
-                    <a href="#" target="_new">Repairs</a>
-                </div>
-                <div class="dropdown-item">
-                    <a href="#" target="_new">We Buy Gold</a>
+    <header>
+        <nav>
+            <div class="menu-item">
+                <a href="../index.html">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="./about.html">About</a>
+            </div>
+            <div class="menu-item">
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="menu-item dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        <a href="#">Jewelry</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">Repairs</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="#">We Buy Gold</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="site-name">
-
-        </div>
+        </nav>
     </header>
-    <h1>Contact Us</h1>
-    <h3>&nbsp;</h3>
-    <h5>&nbsp;</h5>
-    <section>
 
-        <div class="contactus">
-            <div class="row">
-                <div class="col-12">
-                    <label>Name</label>
-                    <input type="text" id="name" name="name">
+    <main>
+        <h1>Contact Us</h1>
+        
+        <section>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" cols="30" rows="10" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" id="btn-submit">Submit</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <label>Email</label>
+        </section>
+    </main>
 
-                    <input type="text" id="e-mail" name="e-mail">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <label class="textareacomments">Comments</label>
-                    <br>
-                    <textarea cols="25%" rows="15%"></textarea>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <input type="submit" id="btn-submit" name="btn-submit">
-                </div>
-            </div>
-
-        </div>
-    </section>
-  
 </body>
-
 </html>
