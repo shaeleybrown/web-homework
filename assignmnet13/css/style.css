@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Define header styles */
+
 header {
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@ header {
     height: 4em;
     width: 100%;
     padding: 0.5em 1em;
-    z-index: 1000; /* Keep the header above other content */
+    z-index: 1000; 
 }
 
 /* Define menu layout */
