@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: rgb(116, 116, 115);
+    background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
 }
 div{
@@ -110,7 +110,7 @@ h1, h3, h5 {
 
 
 .mainimage {
-    float: right;
+    float: center;
     width: 100px; 
     height: 100px;
     content: url("../images/logo.png");
