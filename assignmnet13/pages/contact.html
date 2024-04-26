@@ -1,53 +1,80 @@
-<!DOCTYPE html>
 <html>
+
 <head>
+    <title>Contact Us</title>
     <meta charset="UTF-8">
-    <title>Contact Us - Our Company</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get in touch with our company. Find our contact information including phone, email, and physical address.">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Fonts!">
+    <meta name="author" content="Shaeley Brown">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
+
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#">More</a>
-                    <ul class="dropdown">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <header class="">
+        <div class="menu-item">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="menu-item">
+            <a href="about.html">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-item dropdown">
+            <a href="services.html">Services</a>
+            <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <a href="#" target="_new">Jewelry</a>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#" target="_new">Repairs</a>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#" target="_new">We Buy Gold</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-name">
+
+        </div>
     </header>
+    <h1>Contact Us</h1>
+    <h3>&nbsp;</h3>
+    <h5>&nbsp;</h5>
     <section>
-        <h2>Contact Information</h2>
-        <p>If you'd like to get in touch with us, please use the following contact details:</p>
-        <ul>
-            <li><strong>Phone:</strong> (406)-883-5359</li>
-            <li><strong>Email:</strong> brownsjewelry55@yahoo.com</li>
-            <li><strong>Address:</strong> 321 Main St, Polson, MT 59860</li>
-        </ul>
+
+        <div class="contactus">
+            <div class="row">
+                <div class="col-12">
+                    <label>Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label>Email</label>
+
+                    <input type="text" id="e-mail" name="e-mail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label class="textareacomments">Comments</label>
+                    <br>
+                    <textarea cols="25%" rows="15%"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="submit" id="btn-submit" name="btn-submit">
+                </div>
+            </div>
+
+        </div>
     </section>
-    <section>
-        <h2>Contact Form</h2>
-        <p>Alternatively, you can use the form below to send us a message:</p>
-        <form action="send_message.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  
 </body>
+
 </html>
