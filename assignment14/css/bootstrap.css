@@ -1,78 +1,94 @@
 
-/* bootstrap.css */
 
+
+/* Basic styling for the body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Light background for a winery theme */
 }
 
+/* Navbar styling */
 .navbar {
-    background-color: #5a3c1c; /* Dark brown, reminiscent of oak barrels */
+    background-color: #5a3c1c; /* Dark brown, like oak barrels or aged wine */
 }
 
 .navbar a {
-    color: #fff;
+    color: #ffffff; /* White text for links */
 }
 
 .navbar a:hover {
-    color: #ffd700; /* Gold on hover */
+    color: #ffd700; /* Golden color on hover */
 }
 
+.navbar-toggler {
+    border-color: #ffffff; /* White border for the toggler button */
+}
+
+.navbar-toggler-icon {
+    color: #ffffff;
+}
+
+/* Container padding for consistent spacing */
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+/* Headings styling */
 h1, h2 {
-    color: #5a3c1c; /* Dark brown for headings */
+    color: #5a3c1c; /* Dark brown for consistency */
 }
 
+/* Paragraph styling */
 p {
-    color: #333; /* Dark gray for paragraphs */
-    line-height: 1.5; /* Improved readability */
+    color: #333333; /* Dark gray for readability */
+    line-height: 1.5; /* Better line spacing for text */
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Form elements styling */
 .form-label {
     color: #5a3c1c; /* Dark brown for form labels */
 }
 
 .form-control {
-    border: 1px solid #ccc; /* Light gray border */
+    border: 1px solid #cccccc; /* Light gray border */
 }
 
 .form-control:focus {
-    border-color: #5a3c1c; /* Dark brown border when focused */
-    box-shadow: 0 0 5px rgba(90, 60, 28, 0.5); /* Subtle brown shadow on focus */
+    border-color: #5a3c1c; /* Dark brown border on focus */
+    box-shadow: 0 0 5px rgba(90, 60, 28, 0.5); /* Soft brown glow on focus */
 }
 
 .form-check-input {
-    border-color: #5a3c1c;
+    border-color: #5a3c1c; /* Brown checkbox border */
 }
 
+.form-check-label {
+    color: #333333; /* Consistent text color for checkboxes */
+}
+
+/* Button styling */
 .btn-primary {
-    background-color: #5a3c1c;
-    border: none;
+    background-color: #5a3c1c; /* Dark brown for primary buttons */
+    border: none; /* No border */
 }
 
 .btn-primary:hover {
-    background-color: #79471f; /* Slightly darker on hover */
+    background-color: #79471f; /* Darker shade on hover */
 }
 
+/* Footer styling */
 footer {
-    background-color: #5a3c1c;
-    color: #fff;
+    background-color: #5a3c1c; /* Same dark brown as navbar */
+    color: #ffffff; /* White text in the footer */
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 footer a {
-    color: #ffd700; /* Gold for links in footer */
+    color: #ffd700; /* Gold links in the footer */
 }
 
 footer a:hover {
