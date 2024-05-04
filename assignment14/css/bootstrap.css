@@ -1,0 +1,79 @@
+/* bootstrap.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #5a3c1c; /* Dark brown, reminiscent of oak barrels */
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1, h2 {
+    color: #5a3c1c; /* Dark brown for headings */
+}
+
+p {
+    color: #333; /* Dark gray for paragraphs */
+    line-height: 1.5; /* Improved readability */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-label {
+    color: #5a3c1c; /* Dark brown for form labels */
+}
+
+.form-control {
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+.form-control:focus {
+    border-color: #5a3c1c; /* Dark brown border when focused */
+    box-shadow: 0 0 5px rgba(90, 60, 28, 0.5); /* Subtle brown shadow on focus */
+}
+
+.form-check-input {
+    border-color: #5a3c1c;
+}
+
+.btn-primary {
+    background-color: #5a3c1c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #79471f; /* Slightly darker on hover */
+}
+
+footer {
+    background-color: #5a3c1c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ffd700; /* Gold for links in footer */
+}
+
+footer a:hover {
+    color: #ffffff; /* White on hover */
+}
