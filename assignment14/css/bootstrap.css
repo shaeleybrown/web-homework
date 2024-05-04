@@ -1,6 +1,3 @@
-
-
-
 /* Basic styling for the body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +24,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    color: #ffffff;
+    background-color: #ffffff; /* White toggler icon for visibility */
 }
 
 /* Container padding for consistent spacing */
@@ -36,15 +33,22 @@ body {
     padding-bottom: 20px;
 }
 
+/* Improved padding for smaller screens */
+.container-fluid {
+    padding: 15px; /* Slightly less padding for smaller screens */
+}
+
 /* Headings styling */
 h1, h2 {
     color: #5a3c1c; /* Dark brown for consistency */
+    text-align: center; /* Center-align headings for better layout */
 }
 
 /* Paragraph styling */
 p {
     color: #333333; /* Dark gray for readability */
     line-height: 1.5; /* Better line spacing for text */
+    text-align: justify; /* Justify paragraph text for uniformity */
 }
 
 /* Form elements styling */
@@ -54,6 +58,7 @@ p {
 
 .form-control {
     border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
 }
 
 .form-control:focus {
@@ -73,6 +78,8 @@ p {
 .btn-primary {
     background-color: #5a3c1c; /* Dark brown for primary buttons */
     border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    padding: 10px 20px; /* Standard padding for buttons */
 }
 
 .btn-primary:hover {
@@ -81,10 +88,10 @@ p {
 
 /* Footer styling */
 footer {
-    background-color: #5a3c1c; /* Same dark brown as navbar */
+    background-color: #5a3c1c; /* Same dark brown as the navbar */
     color: #ffffff; /* White text in the footer */
     text-align: center;
-    padding: 10px;
+    padding: 15px; /* Consistent padding */
 }
 
 footer a {
@@ -94,3 +101,4 @@ footer a {
 footer a:hover {
     color: #ffffff; /* White on hover */
 }
+
