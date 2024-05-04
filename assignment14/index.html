@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winery Website</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Winery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#wines">Wines</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Home Section -->
+        <div id="home" class="row mb-4">
+            <div class="col-12">
+                <h1>Welcome to Our Winery</h1>
+                <p>
+                    Discover our collection of exquisite wines crafted with passion and tradition. 
+                    Learn about our history and explore the beautiful vineyard.
+                </p>
+            </div>
+        </div>
+
+        <!-- Wines Section with Canvas -->
+        <div id="wines" class="row mb-4">
+            <div class="col-6">
+                <canvas id="grapevineCanvas" width="500" height="400"></canvas>
+                <script src="js/main.js"></script>
+            </div>
+            <div class="col-6">
+                <h2>Our Wines</h2>
+                <ul>
+                    <li>Chardonnay</li>
+                    <li>Merlot</li>
+                    <li>Pinot Noir</li>
+                    <li>Sauvignon Blanc</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="row mb-4">
+            <div class="col-12">
+                <h2>Contact Us</h2>
+                <p>Email: info@winery.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional footer for additional information -->
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2024 Winery. All Rights Reserved.
+    </footer>
+</body>
+</html>
