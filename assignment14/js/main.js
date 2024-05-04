@@ -1,27 +1,55 @@
-// js/main.js
-window.addEventListener("DOMContentLoaded", () => {
-    const canvas = document.getElementById("grapevineCanvas");
-    const ctx = canvas.getContext("2d");
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var cty = c.getContext("2d");
 
-    // Draw a simple grapevine
-    ctx.fillStyle = "#e0e0e0"; // Light background
-    ctx.fillRect(0, 0, 500, 400); // Clear canvas
 
-    // Draw a simple grapevine with grapes
-    ctx.strokeStyle = "#2e8b57"; // Dark green
-    ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.moveTo(200, 360);
+ctx.lineTo(300, 500);
+ctx.lineTo(100, 500);
+ctx.closePath();
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.stroke();
 
-    // Vine
-    ctx.beginPath();
-    ctx.moveTo(50, 300); // Start at bottom-left
-    ctx.lineTo(450, 100); // End at top-right
-    ctx.stroke();
 
-    // Grapes
-    ctx.fillStyle = "#8b2e2e"; // Deep red (for grapes)
-    for (let i = 0; i < 5; i++) {
-        ctx.beginPath();
-        ctx.arc(100 + i * 70, 250 - i * 50, 30, 0, Math.PI * 2); // Draw grapes
-        ctx.fill();
-    }
-});
+ctx.beginPath();
+ctx.moveTo(50,0);
+ctx.lineTo(150,0);
+ctx.lineTo(150,500);
+ctx.lineTo(50,500);
+ctx.closePath();
+ctx.fillStyle = 'black';
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.moveTo(400,0);
+ctx.lineTo(450,0);
+ctx.lineTo(450,500);
+ctx.lineTo(400,500);
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.moveTo(300,0);
+ctx.lineTo(320,0);
+ctx.lineTo(320,300);
+ctx.lineTo(300,300);
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(200,0);
+ctx.lineTo(230,0);
+ctx.lineTo(230,350);
+ctx.lineTo(200,350);
+ctx.fill();
+
+//fill text
+ctx.font = '40pt Roboto';
+ctx.strokeText('Picture This', 100, 550);
+
+//Wines
+ctx.font = '20pt Roboto';
+ctx.fillStyle = 'red';
+ctx.fillText('Winery', 200, 580);

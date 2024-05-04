@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Winery</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Winery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="wines.html">Wines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Home Content -->
-    <div class="container mt-4">
-        <h1>Welcome to Our Winery</h1>
-        <p>
-            Discover our exquisite wines and the beautiful vineyard where they are made. 
-            Visit our tasting room to experience a range of flavors.
-        </p>
+<html>
+
+<head>
+    <title>WINES!</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="shaeley brown">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" text="text/css" href="./css/bootstrap.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="pages/wines.html">Wines</a>
+          <a class="nav-link" href="pages/contact.html">Contact</a>
+        </div>
+      </div>
     </div>
+  </nav>
+  <div class="row">
+    
+    <div class="col-4">
+
+    <canvas id="myCanvas" height="600" width="500"></canvas>
+    <script src="js/main.js"></script>
+    
+    </div>
+    <div class="col-4">  
+      <p>
+        Wine, one of humanity's oldest and most beloved beverages, has a rich history that spans thousands of years. From ancient civilizations to modern-day connoisseurs, wine has played a central role in cultural rituals, celebrations, and fine dining. At its heart, wine is an expression of place—each bottle embodies the unique characteristics of its region, influenced by climate, soil, and traditional winemaking techniques. The diversity of wine is remarkable, ranging from the robust reds of Bordeaux and the elegant whites of the Loire Valley, to the complex blends from Tuscany and the refreshing sparkling wines from Champagne.
+
+        Beyond its delightful taste and aroma, wine has become an art form, with sommeliers and enthusiasts exploring intricate flavor profiles, nuanced aromas, and subtle textures. Wine tastings and vineyard tours offer a deeper appreciation of the craft, providing insights into the meticulous care that goes into each vintage. Wine's ability to bring people together, whether at intimate gatherings or large-scale events, underscores its enduring appeal. As new winemaking techniques emerge and regions gain recognition, the world of wine continues to evolve, offering endless opportunities for exploration and enjoyment.
+    
+      </p>
+    </div>
+  </div>
+
+
+    
 </body>
 </html>
-
-
-
