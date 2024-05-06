@@ -1,48 +1,41 @@
-// Get canvas context
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+// Get the canvas context
+var canvas = document.getElementById("wineCanvas");
+var ctx = canvas.getContext("2d");
 
-// Draw the blue triangle
+// Draw the body of the wine bottle
 ctx.beginPath();
-ctx.moveTo(200, 360);
-ctx.lineTo(300, 500);
-ctx.lineTo(100, 500);
+ctx.moveTo(100, 200);  // Start at the bottom-left corner of the bottle
+ctx.lineTo(100, 50);   // Left side of the neck
+ctx.bezierCurveTo(100, 30, 140, 30, 140, 50);  // Bottle neck curve
+ctx.lineTo(140, 200);  // Right side of the bottle
 ctx.closePath();
-ctx.fillStyle = 'blue';  // Changed to blue
-ctx.fill();  // Fill the shape
-ctx.strokeStyle = 'purple';  // Changed to purple
-ctx.stroke();  // Draw the outline
+ctx.fillStyle = "#8B4513";  // Brown color for the bottle
+ctx.fill();  // Fill the bottle
 
-// Draw the blue rectangle on the left
+// Draw the neck of the bottle
 ctx.beginPath();
-ctx.moveTo(50, 0);
-ctx.lineTo(150, 0);
-ctx.lineTo(150, 500);
-ctx.lineTo(50, 500);
+ctx.moveTo(100, 50);
+ctx.lineTo(100, 30);  // The neck's top
+ctx.lineTo(140, 30);
+ctx.lineTo(140, 50);
 ctx.closePath();
-ctx.fillStyle = 'blue';  // Changed to blue
-ctx.fill();  // Fill the shape
+ctx.fillStyle = "#654321";  // Darker brown for the neck
+ctx.fill();  // Fill the neck
 
-// Draw the purple rectangle on the right
+// Draw the wine inside the bottle
 ctx.beginPath();
-ctx.moveTo(400, 0);
-ctx.lineTo(450, 0);
-ctx.lineTo(450, 500);
-ctx.lineTo(400, 500);
-ctx.fillStyle = 'purple';  // Changed to purple
-ctx.fill();  // Fill the shape
+ctx.moveTo(100, 150);  // Bottom of the wine level
+ctx.lineTo(140, 150);  // Horizontal line
+ctx.lineTo(140, 200);  // Right side of the wine
+ctx.lineTo(100, 200);  // Left side of the wine
+ctx.closePath();
+ctx.fillStyle = "#B22222";  // Dark red for wine
+ctx.fill();  // Fill the wine
 
-// Draw another purple rectangle in the middle
+// Draw a label on the bottle
 ctx.beginPath();
-ctx.moveTo(300, 0);
-ctx.lineTo(320, 0);
-ctx.lineTo(320, 300);
-ctx.lineTo(300, 300);
-ctx.fillStyle = 'purple';  // Changed to purple
+ctx.rect(105, 160, 30, 30);  // A simple square label
+ctx.fillStyle = "#FFFFFF";  // White label
 ctx.fill();
-
-// Draw the last purple rectangle
-ctx.beginPath();
-ctx.moveTo(200, 0);
-ctx.lineTo(230, 0);
-ctx.lineTo
+ctx.strokeStyle = "#000000";  // Label outline
+ctx.stroke();  // Draw label border
