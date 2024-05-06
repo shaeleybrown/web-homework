@@ -45,9 +45,6 @@ ctx.lineTo(230,350);
 ctx.lineTo(200,350);
 ctx.fill();
 
-//fill text
-ctx.font = '40pt Roboto';
-ctx.strokeText('Picture This', 100, 550);
 
 //Wines
 ctx.font = '20pt Roboto';
